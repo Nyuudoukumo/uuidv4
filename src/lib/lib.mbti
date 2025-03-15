@@ -1,0 +1,11 @@
+package nyuudoukumo/uuidv4/lib
+
+// Values
+fn randomUUID() -> String
+
+// Types and methods
+
+// Type aliases
+
+// Traits
+
