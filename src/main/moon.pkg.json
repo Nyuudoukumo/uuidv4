@@ -1,6 +1,6 @@
 {
   "is-main": true,
   "import": [
-    {"path": "nyuudoukumo/uuidv4/lib", "alias": "uuid"}
+    {"path": "Nyuudoukumo/uuidv4/lib", "alias": "uuid"}
   ]
 }

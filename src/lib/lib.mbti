@@ -1,4 +1,4 @@
-package nyuudoukumo/uuidv4/lib
+package Nyuudoukumo/uuidv4/lib
 
 // Values
 fn randomUUID() -> String
