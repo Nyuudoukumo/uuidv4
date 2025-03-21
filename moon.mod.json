@@ -5,6 +5,6 @@
   "repository": "https://github.com/Nyuudoukumo/uuidv4",
   "license": "Apache-2.0",
   "keywords": ["uuid"],
-  "description": "https://github.com/Nyuudoukumo/uuidv4",
+  "description": "A version 4 UUID generator",
   "source": "src"
 }
