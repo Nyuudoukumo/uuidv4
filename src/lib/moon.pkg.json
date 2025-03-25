@@ -1,1 +1,5 @@
-{}
+{
+    "targets": {
+        "uuid4_uniqueness_test": ["js"]
+    }
+}

@@ -23,17 +23,24 @@ In `moon.pkg.json`
 The `randomUUID()` will return a uuid as a String
 
 ```moonbit
+extern "js" fn seed() -> Bytes =
+  #|() => {
+  #|  const crypto = require('crypto');
+  #|  const timestamp = (Date.now()).toString();
+  #|  const hash = crypto.createHash('sha256');
+  #|  hash.update(timestamp);
+  #|  const hashHex = hash.digest('hex');
+  #|  const seed = Buffer.from(hashHex, 'hex');
+  #|  return seed;
+  #|};
+
 fn main {
-  println(@uuid.randomUUID())
+  println(@uuid.randomUUID(seed))
 }
 ```
 
 **Notice**, this package currently relies on JavaScript FFI:
 
 ```bash
-moon run --target js "src\main"
+moon run "src\main"
 ```
-
-## Todo
-
-- [ ] Remove JavaScript FFI
