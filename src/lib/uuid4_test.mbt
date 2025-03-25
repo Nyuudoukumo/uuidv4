@@ -4,7 +4,6 @@ test "UUID Format and Structure" {
     @bytes.from_array(Array::make(32,b'0'))
   }
   let uuid = @lib.randomUUID(mock_seed)
-  println(uuid)
   
   // Test length
   assert_eq!(uuid.length(), 36)
