@@ -2,7 +2,7 @@
 
 A version 4 UUID generator written in the moonbit language, referring to [RFC 4122](https://datatracker.ietf.org/doc/html/rfc4122).  
 
-## Uasge
+## Usage
 
 ### Use by api
 
@@ -37,10 +37,4 @@ extern "js" fn seed() -> Bytes =
 fn main {
   println(@uuid.randomUUID(seed))
 }
-```
-
-**Notice**, this package currently relies on JavaScript FFI:
-
-```bash
-moon run "src\main"
 ```

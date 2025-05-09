@@ -1,6 +1,6 @@
 let table = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f']
 ///|
-/// create version 4 UUID conforming to RFC412
+/// create version 4 UUID conforming to RFC4122
 /// ## Parameters
 /// - `get_seed` : A function that returns a 32-byte seed.   
 ///   The seed function should:  
